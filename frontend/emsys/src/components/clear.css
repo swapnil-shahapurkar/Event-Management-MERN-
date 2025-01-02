@@ -1,0 +1,52 @@
+/* clear.css - A global CSS reset */
+
+/* Remove default margin and padding from all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /* Ensures consistent box sizing */
+  }
+  
+  /* Reset specific elements like body, headings, paragraphs, and lists */
+  body, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Remove list-style and default font-size */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Set font and text styles */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #fff;  /* Default background color */
+    color: #333;             /* Default text color */
+  }
+  
+  /* Reset anchor (link) styles */
+  a {
+    text-decoration: none;
+    color: inherit;  /* Ensure links inherit text color */
+  }
+  
+  /* Additional resets for other elements */
+  input, button, select, textarea {
+    border: none;
+    outline: none;
+    background: none;
+  }
+  
+  /* Reset form element styles */
+  input[type="text"], input[type="email"], input[type="password"], textarea {
+    background-color: transparent;
+    color: #333;
+  }
+  
+  /* Reset table styles */
+  table {
+    border-collapse: collapse;
+  }
+  

@@ -1,0 +1,154 @@
+/* ================== Booking Page ================== */
+ body {
+    background-color: #121212;
+    color: #eaeaea;
+  }
+  
+   .form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    color: #eaeaea;
+  }
+  
+   h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+   label {
+    font-size: 14px;
+    margin-bottom: 6px;
+    display: block;
+  }
+  
+   input[type="text"],
+   input[type="number"],
+   input[type="email"],
+   input[type="date"],
+   select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #333;
+    border: 1px solid #555;
+    border-radius: 5px;
+    color: #eaeaea;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+   input:focus,
+   select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+   .radio-group {
+    margin-bottom: 15px;
+  }
+  
+   .radio-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+   .radio-container input[type="radio"] {
+    margin-right: 5px;
+    accent-color: #007bff;
+  }
+  
+  /* Buttons for Booking Page */
+   .button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+   input[type="submit"],
+   input[type="button"] {
+    width: 30%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+   input[type="submit"]:hover,
+   input[type="button"]:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Center Align the Third Button */
+   .third-button-container {
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* ================== Receipt Page ================== */
+   body {
+    background-color: #2d2d2d;
+    color: #ffffff;
+  }
+  
+   .receipt-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+   .receipt-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+   .receipt-details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+   .receipt-details th,
+   .receipt-details td {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+  }
+  
+   .receipt-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+ button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+    button:hover {
+    transform: scale(1.05);
+  }
+  

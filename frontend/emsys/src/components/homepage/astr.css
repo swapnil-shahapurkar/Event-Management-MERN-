@@ -1,0 +1,97 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212; /* Dark background color */
+    color: #f0f0f0; /* Light text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styles */
+.venue-finder {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Search Section Styles */
+.venue-finder input[type="text"] {
+    width: 300px; /* Adjusted input width */
+    padding: 10px;
+    border: 2px solid #6a5acd; /* Light purple border */
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: #29293a; /* Darker input background */
+    color: #f0f0f0;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+    margin-right: 10px; /* Spacing between input and button */
+}
+
+.venue-finder input[type="text"]:focus {
+    outline: none;
+    border-color: #3b82f6; /* Bright blue border on focus */
+    box-shadow: 0 0 10px rgba(60, 70, 230, 0.8);
+}
+
+.venue-finder button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    background-color: #3b82f6; /* Bright blue button */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.venue-finder button:hover {
+    background-color: #2a6dd4; /* Darker blue on hover */
+}
+
+/* Venue List Section */
+.venue-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between venue items */
+    margin-top: 20px;
+}
+
+.venue-item {
+    background-color: #29293a; /* Dark card background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 300px; /* Fixed card width */
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.venue-item:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 15px rgba(60, 70, 230, 0.6); /* Glow effect */
+}
+
+.venue-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.venue-item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.venue-item p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .venue-item {
+        width: 90%;
+    }
+}

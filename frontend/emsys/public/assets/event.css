@@ -1,0 +1,71 @@
+.home a {
+    color: rgb(248, 252, 255);
+    /* Original color */
+    font-size: 30px;
+    text-decoration: none;
+    /* Add this if you want to remove underline */
+}
+
+.home a:hover {
+    color: rgb(147, 180, 228);
+    /* Hover color */
+}
+
+
+.login {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid rgb(67, 177, 224);
+    border-radius: 8px;
+    width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    background-color: transparent;
+    border-color: rgb(67, 177, 224);
+    border-radius: 6px;
+    width: 230px;
+    height: 25px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+.signup {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid rgb(67, 177, 224);
+    border-radius: 8px;
+    width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

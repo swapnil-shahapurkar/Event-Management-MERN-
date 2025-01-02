@@ -1,0 +1,331 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/* Navigation Bar */
+.navigation-bar {
+    background-color: black;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.icon img {
+    height: 60px;
+    width: auto;
+}
+.home {
+    display: flex;
+    color: wheat;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.home a {
+    color: wheat;
+    text-decoration: none;
+}
+
+.home a:hover {
+    color: gold;
+}
+
+.carousel {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    animation: slide 8s infinite;
+
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+    flex: 1 0 100%;
+    /* Each image takes 100% of the carousel width */
+}
+
+@keyframes slide {
+
+    0%,
+    25% {
+        transform: translateX(0%);
+    }
+
+    30%,
+    50% {
+        transform: translateX(-100%);
+    }
+
+    55%,
+    75% {
+        transform: translateX(-200%);
+    }
+
+    80%,
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
+/* Row 2 */
+.row2 {
+    height: 400px;
+    background-color: rgb(36, 36, 36);
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    margin: 40px;
+}
+
+.col2 {
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.col2 h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.col2 p {
+    max-width: 500px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.calendar-icon {
+    font-size: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.calendar-button {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: gold;
+    border: none;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.calendar-button:hover {
+    background-color: darkgoldenrod;
+}
+
+/* Calendar Popup */
+.calendar-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar-popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.calendar h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#calendar-slots {
+    list-style-type: none;
+    padding: 0;
+}
+
+#calendar-slots li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: lightgray;
+    border-radius: 5px;
+    text-align: center;
+}
+/* Styling for the booking section */
+.row3 {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.row3 h3 {
+    font-family: 'Arial', sans-serif;
+    color: #2c0222;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.book {
+    background-color: #5a189a;
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.book:hover {
+    background-color: #9d4edd;
+    transform: translateY(-3px);
+}
+
+.book:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Footer */
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-links,
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer a,
+.social-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover,
+.social-links a:hover {
+    color: gold;
+}
+
+/* Animations */
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+.fadeInLeft {
+    animation-name: fadeInLeft;
+}
+
+.fadeInRight {
+    animation-name: fadeInRight;
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+.zoomIn {
+    animation-name: zoomIn;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
