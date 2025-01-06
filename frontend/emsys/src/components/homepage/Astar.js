@@ -265,7 +265,7 @@ const VenueFinder = () => {
               boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
               fontSize: '16px',
               color: '#333',
-              width: '30%',
+              width: '100%',
             }}
           >
             <strong>{item.venue}</strong>: <span>{item.distance.toFixed(2)} km</span>

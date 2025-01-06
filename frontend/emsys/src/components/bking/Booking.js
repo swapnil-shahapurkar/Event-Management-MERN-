@@ -75,11 +75,7 @@ const EventBookingForm = () => {
     }
   
     // Validate gender (must be one of the specified options)
-    const validGenders = ['Male', 'Female', 'Other'];
-    if (!validGenders.includes(gender)) {
-      alert('Please select a valid gender!');
-      return false;
-    }
+
   
     // Validate age (numeric, between 1 and 120)
     if (!/^\d+$/.test(age) || age < 1 || age > 120) {
