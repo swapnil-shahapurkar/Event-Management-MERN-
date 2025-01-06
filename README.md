@@ -5,7 +5,7 @@ This is a full-stack web application designed to manage events and bookings. The
 ## Features
 
 - **User Authentication**: Users can log in securely with their credentials to access event details and make bookings.
-- **Search for Venues**: Users can enter their city name to search for nearby venues using an efficient algorithm.
+- **Search for Venues**: Users can enter their city name to search for nearby venues using an efficient A* algorithm.
 - **Booking Events**: Users can fill out a booking form to reserve event slots and generate a receipt.
 - **View Bookings**: Users can check their previous bookings and event details.
 - **Receipt Generation**: After successful booking, users can download their receipt.
