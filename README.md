@@ -25,8 +25,7 @@ This is a full-stack web application designed to manage events and bookings. The
 - **APIs**:
   - Custom API endpoints to handle user authentication, venue search, booking, and receipt generation.
 
-- **Authentication**:
-  - JWT (JSON Web Token): For secure user authentication and session management.
+
 
 - **Version Control**:
   - Git & GitHub: For source code management and version control.
