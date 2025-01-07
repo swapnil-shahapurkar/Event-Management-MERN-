@@ -20,7 +20,7 @@ This is a full-stack web application designed to manage events and bookings. The
 - **Backend**:
   - Node.js: A JavaScript runtime built on Chrome's V8 engine, used to handle server-side logic.
   - Express.js: A web application framework for Node.js that simplifies routing and handling HTTP requests.
-  - MongoDB: A NoSQL database used to store user data, bookings, event details, and venue information.
+  - MongoDB: A NoSQL database used to store user data, bookings, event details, and venue information..
 
 - **APIs**:
   - Custom API endpoints to handle user authentication, venue search, booking, and receipt generation.
