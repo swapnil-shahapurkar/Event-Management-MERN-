@@ -3,9 +3,15 @@ import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
 import cors from 'cors'; // Add CORS to handle cross-origin requests
 import bcrypt from 'bcryptjs'; // Add bcrypt for password hashing
-
+import dotenv from 'dotenv';
+// Load environment variables
+dotenv.config();
 // Create an Express app
 const app = express();
+
+// Check if variables are loaded
+console.log('MONGO_URI_EVENT:', process.env.MONGO_URI_EVENT);
+console.log('MONGO_URI_SIGNUP:', process.env.MONGO_URI_SIGNUP);
 
 // Middleware to parse incoming requests
 app.use(bodyParser.json());
@@ -16,16 +22,26 @@ app.use(cors());
 
 // **Database Connections**
 // Connect to the Event Booking Database
-const eventBookingDB = mongoose.createConnection('mongodb://localhost:27017/eventBookingDB', {
+
+
+// Connect to the Event Booking Database
+const eventBookingDB = mongoose.createConnection(process.env.MONGO_URI_EVENT, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
 
 // Connect to the Signup Database
-const signupDB = mongoose.createConnection('mongodb://localhost:27017/signupDB', {
+const signupDB = mongoose.createConnection(process.env.MONGO_URI_SIGNUP, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
+
+// Check if connections are successful
+eventBookingDB.on('connected', () => console.log('✅ Event Booking DB Connected'));
+signupDB.on('connected', () => console.log('✅ Signup DB Connected'));
+
+eventBookingDB.on('error', (err) => console.error('❌ Event Booking DB Error:', err));
+signupDB.on('error', (err) => console.error('❌ Signup DB Error:', err));
 
 // Log connections
 eventBookingDB.once('open', () => console.log('Connected to Event Booking Database'));
