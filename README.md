@@ -2,6 +2,8 @@
 
 This is a full-stack web application designed to manage events and bookings. The system allows users to search for venues, make bookings, and view their past bookings. The project is built using the MERN stack, which consists of MongoDB, Expr.ess.js, React, and Node.js. This application demonstrates the power of modern JavaScript technologies for building scalable and interactive web applications.
 
+Complete Gothrough :- https://sites.google.com/view/swapnilweb/home
+
 ## Features
 
 - **User Authentication**: Users can log in securely with their credentials to access event details and make bookings.
